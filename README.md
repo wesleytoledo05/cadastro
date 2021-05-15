@@ -2,14 +2,16 @@
 Calcule a quantidade max. de cliques, visualização e compartilhamento a partir de um determinado valor investido.
 
 Rodando a aplicação:
-`` `sh
+
+```sh
 Vá até o arquivo "CadastroApplication.java" que se encontra na pasta main e aperte a tecla F5.
-`` `
+```
 
 Banco de dados H2:
-`` `sh
+
+```sh
 Digite "http://localhost:8080/h2/login" em sua barra de endereço.
-`` `
+```
 
 Login no banco de dados:
 `` `sh
