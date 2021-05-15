@@ -94,7 +94,7 @@ Retorno Esperado:
 
 | Endpoint | Método | Descrição | 
 | -------- | ------ | --------- |
-| /anuncio/buscaData?data_inicio=12/05/2021&data_termino=14/05/2021| GET | Busque no banco de dados todos anuncios cadastrado em um determinado período de tempo
+| /anuncio/buscaData?data_inicio=12/05/2021&data_termino=14/05/2021| GET | Busque no banco de dados todos anuncios cadastrado em um determinado período de tempo.
 
 Retorno Esperado:
 ```sh
