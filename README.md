@@ -1,20 +1,18 @@
 # API de cadastro de anuncio
 Calcule a quantidade max. de cliques, visualização e compartilhamento a partir de um determinado valor investido.
 
-Rodando a aplicação:
 
+Rodando a aplicação:
 ```sh
 Vá até o arquivo "CadastroApplication.java" que se encontra na pasta main e aperte a tecla F5.
 ```
 
 Banco de dados H2:
-
 ```sh
 Digite "http://localhost:8080/h2/login" em sua barra de endereço.
 ```
 
 Login no banco de dados:
-
 ```sh
 Drive Class: org.h2.Driver
 JDBC URL: jdbc:h2:./data/anunciodb
