@@ -1,4 +1,4 @@
-#API de cadastro de anuncio
+# API de cadastro de anuncio
 Calcule a quantidade max. de cliques, visualização e compartilhamento a partir de um determinado valor investido.
 
 Rodando a aplicação:
@@ -22,7 +22,7 @@ User Name: sa
 Password: 
 ```
 
-##Testando a API:
+## Testando a API:
 | Endpoint | Método | Descrição | 
 | -------- | ------ | --------- |
 |/anuncio  |  POST  | Cadastre o anuncio e receba um relatório com uma especulação de alcance máximo que seu anuncio ira ter.
