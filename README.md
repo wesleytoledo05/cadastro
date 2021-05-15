@@ -14,12 +14,13 @@ Digite "http://localhost:8080/h2/login" em sua barra de endereço.
 ```
 
 Login no banco de dados:
-`` `sh
+
+```sh
 Drive Class: org.h2.Driver
 JDBC URL: jdbc:h2:./data/anunciodb
 User Name: sa
 Password: 
-`` `
+```
 
 ##Testando a API:
 | Endpoint | Método | Descrição | 
@@ -28,9 +29,9 @@ Password:
 | /anuncio/buscaCliente?cliente= | GET | Busque no banco de dados pelo nome do cliente cadastrado.
 
 No corpo(body) do método POST:
-`` `sh
+```sh
 { "nome_anuncio": "Anuncio Teste", "cliente": "Cliente teste", "data_inicio": "2021-05-12","data_termino": "2021-05-15", "investimento_por_dia": 100 }
-`` `		
+```		
 
 Retorno esperado:
 `` `sh
