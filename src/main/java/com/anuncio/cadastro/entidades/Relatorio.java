@@ -2,6 +2,9 @@
 package com.anuncio.cadastro.entidades;
 
 import javax.persistence.Transient;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.Column;
 import javax.persistence.GenerationType;
 import javax.persistence.GeneratedValue;
@@ -9,6 +12,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Entity;
 
+// ignora os relacionamentos lazy do hibernate porque eles vem inicialmente
+// vazios e o jackson vai tentar fazer o parse dele pra json/xml
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 @Entity
 @Table(name = "relatorio")
 public class Relatorio
