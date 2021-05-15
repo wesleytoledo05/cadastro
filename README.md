@@ -29,12 +29,37 @@ Password:
 
 No corpo(body) do método POST:
 ```sh
-{ "nome_anuncio": "Anuncio Teste", "cliente": "Cliente teste", "data_inicio": "2021-05-12","data_termino": "2021-05-15", "investimento_por_dia": 100 }
+{
+  "nome_anuncio": "Anuncio Teste",
+  "cliente": "cliente teste",
+  "data_inicio": "2021-05-13",
+  "data_termino": "2021-05-14",
+  "investimento_por_dia": 100
+}
 ```		
 Retorno esperado:
 ```sh
-{ "id": 1, "nome_anuncio": "Anuncio Teste", "cliente": "Cliente teste", "data_inicio":"2021-05-11", "data_termino": "2021-05-14", "investimento_por_dia": 100.0, "relatorio": {"id": 2,"total_investido": 300.0, "qtd_max_visualizacao": 41400.0, "qtd_max_clique": 1080.0,"qtd_max_compartilhamento": 810.0, "qtd_vis_anuncio_original": 9000.0, qtd_clique_anuncio_original": 1080.0, "qtd_compartilhamento_original": 162.0,
-    "qtd_novas_visualizacoes": 6480.0,"qtd_seq_compartilhamento": 648.0, "qtd_visu_por_anuncio":25920.0 } }
+{
+  "id": 1,
+  "nome_anuncio": "Anuncio Teste",
+  "cliente": "cliente teste",
+  "data_inicio": "2021-05-13T00:00:00.000+00:00",
+  "data_termino": "2021-05-14T00:00:00.000+00:00",
+  "investimento_por_dia": 100.0,
+  "relatorio": {
+    "id": 2,
+    "total_investido": 100.0,
+    "qtd_max_visualizacao": 13800.0,
+    "qtd_max_clique": 360.0,
+    "qtd_max_compartilhamento": 270.0,
+    "qtd_vis_anuncio_original": 3000.0,
+    "qtd_clique_anuncio_original": 360.0,
+    "qtd_compartilhamento_original": 54.0,
+    "qtd_novas_visualizacoes": 2160.0,
+    "qtd_seq_compartilhamento": 216.0,
+    "qtd_visu_por_anuncio": 8640.0
+  }
+}
 ```
 
 
@@ -50,21 +75,51 @@ Retorno Esperado:
   "cliente": "cliente teste",
   "data_inicio": "2021-05-13T00:00:00.000+00:00",
   "data_termino": "2021-05-14T00:00:00.000+00:00",
-  "investimento_por_dia": 4000.0,
+  "investimento_por_dia": 100.0,
   "relatorio": {
     "id": 2,
-    "total_investido": 4000.0,
-    "qtd_max_visualizacao": 552000.0,
-    "qtd_max_clique": 14400.0,
-    "qtd_max_compartilhamento": 10800.0,
-    "qtd_vis_anuncio_original": 120000.0,
-    "qtd_clique_anuncio_original": 14400.0,
-    "qtd_compartilhamento_original": 2160.0,
-    "qtd_novas_visualizacoes": 86400.0,
-    "qtd_seq_compartilhamento": 8640.0,
-    "qtd_visu_por_anuncio": 345600.0
+    "total_investido": 100.0,
+    "qtd_max_visualizacao": 13800.0,
+    "qtd_max_clique": 360.0,
+    "qtd_max_compartilhamento": 270.0,
+    "qtd_vis_anuncio_original": 3000.0,
+    "qtd_clique_anuncio_original": 360.0,
+    "qtd_compartilhamento_original": 54.0,
+    "qtd_novas_visualizacoes": 2160.0,
+    "qtd_seq_compartilhamento": 216.0,
+    "qtd_visu_por_anuncio": 8640.0
   }
 }
 ```
 
+| Endpoint | Método | Descrição | 
+| -------- | ------ | --------- |
+| /anuncio/buscaData?data_inicio=12/05/2021&data_termino=14/05/2021| GET | Busque no banco de dados todos anuncios cadastrado em um determinado período de tempo
+
+Retorno Esperado:
+```sh
+[
+  {
+    "id": 1,
+    "nome_anuncio": "Anuncio Teste",
+    "cliente": "cliente teste",
+    "data_inicio": "2021-05-13T00:00:00.000+00:00",
+    "data_termino": "2021-05-14T00:00:00.000+00:00",
+    "investimento_por_dia": 100.0,
+    "relatorio": {
+      "id": 2,
+      "total_investido": 100.0,
+      "qtd_max_visualizacao": 13800.0,
+      "qtd_max_clique": 360.0,
+      "qtd_max_compartilhamento": 270.0,
+      "qtd_vis_anuncio_original": 3000.0,
+      "qtd_clique_anuncio_original": 360.0,
+      "qtd_compartilhamento_original": 54.0,
+      "qtd_novas_visualizacoes": 2160.0,
+      "qtd_seq_compartilhamento": 216.0,
+      "qtd_visu_por_anuncio": 8640.0
+    }
+  }
+]
+```
 
