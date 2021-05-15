@@ -32,9 +32,9 @@ No corpo(body) do método POST:
 { "nome_anuncio": "Anuncio Teste", "cliente": "Cliente teste", "data_inicio": "2021-05-12","data_termino": "2021-05-15", "investimento_por_dia": 100 }
 ```		
 Retorno esperado:
-`` `sh
+```sh
 { "id": 1, "nome_anuncio": "Anuncio Teste", "cliente": "Cliente teste", "data_inicio":"2021-05-11", "data_termino": "2021-05-14", "investimento_por_dia": 100.0, "relatorio": {"id": 2,"total_investido": 300.0, "qtd_max_visualizacao": 41400.0, "qtd_max_clique": 1080.0,"qtd_max_compartilhamento": 810.0, "qtd_vis_anuncio_original": 9000.0, qtd_clique_anuncio_original": 1080.0, "qtd_compartilhamento_original": 162.0,
     "qtd_novas_visualizacoes": 6480.0,"qtd_seq_compartilhamento": 648.0, "qtd_visu_por_anuncio":25920.0 } }
-`` `
+```
 | /anuncio/buscaCliente?cliente= | GET | Busque no banco de dados pelo nome do cliente cadastrado.
 
