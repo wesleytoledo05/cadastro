@@ -37,7 +37,34 @@ Retorno esperado:
     "qtd_novas_visualizacoes": 6480.0,"qtd_seq_compartilhamento": 648.0, "qtd_visu_por_anuncio":25920.0 } }
 ```
 
+
 | Endpoint | Método | Descrição | 
 | -------- | ------ | --------- |
 | /anuncio/buscaCliente?cliente=cliente teste | GET | Busque no banco de dados pelo nome do cliente cadastrado.
+
+Retorno Esperado:
+```sh
+{
+  "id": 1,
+  "nome_anuncio": "Anuncio Teste",
+  "cliente": "cliente teste",
+  "data_inicio": "2021-05-13T00:00:00.000+00:00",
+  "data_termino": "2021-05-14T00:00:00.000+00:00",
+  "investimento_por_dia": 4000.0,
+  "relatorio": {
+    "id": 2,
+    "total_investido": 4000.0,
+    "qtd_max_visualizacao": 552000.0,
+    "qtd_max_clique": 14400.0,
+    "qtd_max_compartilhamento": 10800.0,
+    "qtd_vis_anuncio_original": 120000.0,
+    "qtd_clique_anuncio_original": 14400.0,
+    "qtd_compartilhamento_original": 2160.0,
+    "qtd_novas_visualizacoes": 86400.0,
+    "qtd_seq_compartilhamento": 8640.0,
+    "qtd_visu_por_anuncio": 345600.0
+  }
+}
+```
+
 
