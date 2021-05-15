@@ -4,7 +4,7 @@ Calcule a quantidade max. de cliques, visualização e compartilhamento a partir
 
 Rodando a aplicação:
 ```sh
-Vá até o arquivo "CadastroApplication.java" que se encontra na pasta main e aperte a tecla F5.
+Vá até o arquivo "CadastroApplication.java" que se encontra na pasta src/main/java/com/anuncio/cadastro e aperte a tecla F5.
 ```
 
 Banco de dados H2:
